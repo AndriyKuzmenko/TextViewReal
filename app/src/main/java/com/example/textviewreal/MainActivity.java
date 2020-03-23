@@ -71,6 +71,29 @@ public class MainActivity extends AppCompatActivity
             if (answer == sum) stage1.setImageResource(R.drawable.correct);
             else stage1.setImageResource(R.drawable.incorrect);
             done1=true;
+
+            num1=sum;
+            num2=r.nextInt(90)+10;
+            sum=num1+num2;
+            num1Stage2.setText(num1+"");
+            num2Stage2.setText(num2+"");
+        }
+    }
+
+    public void check2(View view)
+    {
+        if (!done2 && done1)
+        {
+            answer = Integer.parseInt(ans2.getText().toString());
+            if (answer == sum) stage2.setImageResource(R.drawable.correct);
+            else stage2.setImageResource(R.drawable.incorrect);
+            done2=true;
+
+            num1=sum;
+            num2=r.nextInt(90)+10;
+            sum=num1+num2;
+            num1Stage3.setText(num1+"");
+            num2Stage3.setText(num2+"");
         }
     }
 }
