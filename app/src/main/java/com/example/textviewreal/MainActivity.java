@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity
     ImageView stage3;
     int num1,num2,sum, answer;
     boolean done1,done2,done3;
-    Context context;
     int counter;
+    CharSequence message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -128,6 +128,14 @@ public class MainActivity extends AppCompatActivity
                 stage3.setImageResource(R.drawable.incorrect);
             }
             done3=true;
+
+            int percent=counter*100/3;
+            message="You've answered correctly "+counter+"/3 questions. That is "+percent+"% of the questions";
+
+            Context context=getApplicationContext();
+            int duration=Toast.LENGTH_LONG;
+
+            Toast.makeText(context, message, duration).show();
         }
     }
 }
