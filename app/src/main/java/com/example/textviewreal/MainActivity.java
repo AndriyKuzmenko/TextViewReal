@@ -2,10 +2,13 @@ package com.example.textviewreal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -24,6 +27,9 @@ public class MainActivity extends AppCompatActivity
     ImageView stage1;
     ImageView stage2;
     ImageView stage3;
+    int num1,num2,sum, answer;
+    boolean done1,done2,done3;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -46,5 +52,25 @@ public class MainActivity extends AppCompatActivity
         stage1=(ImageView)findViewById(R.id.imageView);
         stage2=(ImageView)findViewById(R.id.imageView5);
         stage3=(ImageView)findViewById(R.id.imageView7);
+
+        num1=r.nextInt(90)+10;
+        num2=r.nextInt(90)+10;
+        sum=num1+num2;
+        done1=false;
+        done2=false;
+        done3=false;
+        num1Stage1.setText(num1+"");
+        num2Stage1.setText(num2+"");
+    }
+
+    public void check1(View view)
+    {
+        if (!done1)
+        {
+            answer = Integer.parseInt(ans1.getText().toString());
+            if (answer == sum) stage1.setImageResource(R.drawable.correct);
+            else stage1.setImageResource(R.drawable.incorrect);
+            done1=true;
+        }
     }
 }
