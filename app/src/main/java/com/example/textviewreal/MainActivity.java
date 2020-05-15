@@ -144,8 +144,6 @@ public class MainActivity extends AppCompatActivity
         done1=false;
         done2=false;
         done3=false;
-        //num1Stage1.setText("Number1");
-        //num2Stage1.setText("Number2");
         num1Stage2.setText("");
         num2Stage2.setText("");
         num1Stage3.setText("");
@@ -158,13 +156,10 @@ public class MainActivity extends AppCompatActivity
         num1=r.nextInt(90)+10;
         num2=r.nextInt(90)+10;
         sum=num1+num2;
-        //done1=false;
-        //done2=false;
-        //done3=false;
         num1Stage1.setText(num1+"");
         num2Stage1.setText(num2+"");
-        stage1.setImageResource(R.drawable.ic_launcher_background);
-        stage2.setImageResource(R.drawable.ic_launcher_background);
-        stage3.setImageResource(R.drawable.ic_launcher_background);
+        stage1.setImageDrawable(null);
+        stage2.setImageDrawable(null);
+        stage3.setImageDrawable(null);
     }
 }
