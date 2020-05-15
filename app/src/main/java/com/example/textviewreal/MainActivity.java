@@ -39,20 +39,20 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         r=new Random();
-        ans1=(EditText)findViewById(R.id.editText);
-        ans2=(EditText)findViewById(R.id.editText6);
-        ans3=(EditText)findViewById(R.id.editText7);
+        ans1=(EditText)findViewById(R.id.ans1);
+        ans2=(EditText)findViewById(R.id.ans2);
+        ans3=(EditText)findViewById(R.id.ans3);
 
-        num1Stage1=(TextView)findViewById(R.id.textView2);
-        num2Stage1=(TextView)findViewById(R.id.textView3);
-        num1Stage2=(TextView)findViewById(R.id.textView14);
-        num2Stage2=(TextView)findViewById(R.id.textView15);
-        num1Stage3=(TextView)findViewById(R.id.textView17);
-        num2Stage3=(TextView)findViewById(R.id.textView18);
+        num1Stage1=(TextView)findViewById(R.id.num1Stage1);
+        num2Stage1=(TextView)findViewById(R.id.num2Stage1);
+        num1Stage2=(TextView)findViewById(R.id.num1Stage2);
+        num2Stage2=(TextView)findViewById(R.id.num2Stage2);
+        num1Stage3=(TextView)findViewById(R.id.num1Stage3);
+        num2Stage3=(TextView)findViewById(R.id.num2Stage3);
 
-        stage1=(ImageView)findViewById(R.id.imageView);
-        stage2=(ImageView)findViewById(R.id.imageView5);
-        stage3=(ImageView)findViewById(R.id.imageView7);
+        stage1=(ImageView)findViewById(R.id.stage1);
+        stage2=(ImageView)findViewById(R.id.stage2);
+        stage3=(ImageView)findViewById(R.id.stage3);
         counter=0;
 
         num1=r.nextInt(90)+10;
