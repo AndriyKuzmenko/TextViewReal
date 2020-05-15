@@ -34,8 +34,7 @@
                 android:id="@+id/num1Stage1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="10"
-                android:text="Number1" />
+                android:layout_weight="10" />
 
             <Space
                 android:layout_width="match_parent"
@@ -46,8 +45,7 @@
                 android:id="@+id/num2Stage1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="10"
-                android:text="Number2" />
+                android:layout_weight="10" />
 
             <Space
                 android:layout_width="match_parent"
@@ -119,8 +117,7 @@
                 android:id="@+id/num1Stage2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="10"
-                android:text="Number1" />
+                android:layout_weight="10" />
 
             <Space
                 android:layout_width="match_parent"
@@ -131,8 +128,7 @@
                 android:id="@+id/num2Stage2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="10"
-                android:text="Number2" />
+                android:layout_weight="10" />
 
             <Space
                 android:layout_width="match_parent"
@@ -211,8 +207,7 @@
                 android:id="@+id/num1Stage3"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="10"
-                android:text="Number1" />
+                android:layout_weight="10" />
 
             <Space
                 android:layout_width="match_parent"
@@ -224,7 +219,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="10"
-                android:text="Number2  " />
+                android:text="  " />
 
             <Space
                 android:layout_width="match_parent"

@@ -146,10 +146,10 @@ public class MainActivity extends AppCompatActivity
         done3=false;
         //num1Stage1.setText("Number1");
         //num2Stage1.setText("Number2");
-        num1Stage2.setText("Number1");
-        num2Stage2.setText("Number2");
-        num1Stage3.setText("Number1");
-        num2Stage3.setText("Number2");
+        num1Stage2.setText("");
+        num2Stage2.setText("");
+        num1Stage3.setText("");
+        num2Stage3.setText("");
         ans1.setText("");
         ans2.setText("");
         ans3.setText("");
